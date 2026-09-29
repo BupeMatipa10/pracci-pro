@@ -3,398 +3,321 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Pracci Pro — Don't Belong Here!!</title>
-  <meta name="description"
-        content="Official download page for Pracci Pro's Don't Belong Here!! album.">
-
-  <link rel="stylesheet" href="style.css">
+  <title>Pracci Pro | Zambian Hip Hop</title>
+  <meta name="description" content="Official website of Pracci Pro — Zambian hip hop artist from Kafue. Stream music, watch videos, and follow the journey.">
+  <meta name="theme-color" content="#0a0a0a">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-
-  <!-- HEADER -->
+  <!-- Navigation -->
   <header class="header">
-    <div class="logo">PRACCI <span>PRO</span></div>
-
-    <nav>
-      <a href="#album">Album</a>
-      <a href="#downloads">Downloads</a>
-      <a href="#about">About</a>
-    </nav>
+    <div class="container nav">
+      <a href="#home" class="logo">PRACCI <span>PRO</span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" id="navToggle">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#music">Music</a>
+        <a href="#videos">Videos</a>
+        <a href="#connect">Connect</a>
+      </nav>
+    </div>
   </header>
 
-
-  <!-- HERO -->
-  <section class="hero" id="album">
-
-    <div class="hero-content">
-
-      <div class="album-cover">
-        <img src="images/dont-belong-here-cover.jpg"
-             alt="Pracci Pro Don't Belong Here album cover">
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="hero-bg"></div>
+    <div class="container hero-content">
+      <p class="hero-tag">Zambian Hip Hop • WhiteBlood Music</p>
+      <h1>PRACCI <span>PRO</span></h1>
+      <p class="hero-sub">From Kafue to the world. Real stories. Real bars.</p>
+      <div class="hero-cta">
+        <a href="#music" class="btn btn-primary">Stream Music</a>
+        <a href="#videos" class="btn btn-outline">Watch Videos</a>
       </div>
-
-      <div class="album-info">
-
-        <p class="artist-name">PRACCI PRO</p>
-
-        <h1>DON'T<br>BELONG HERE!!</h1>
-
-        <p class="album-description">
-          The official digital download of Pracci Pro's album
-          <strong>Don't Belong Here!!</strong>
-        </p>
-
-        <a href="#downloads" class="main-button">
-          ↓ DOWNLOAD THE ALBUM
-        </a>
-
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">460+</span>
+          <span class="stat-label">Monthly Listeners</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">Kafue</span>
+          <span class="stat-label">Hometown</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">Zambia</span>
+          <span class="stat-label">Representing</span>
+        </div>
       </div>
-
     </div>
-
   </section>
 
-
-  <!-- DOWNLOAD SECTION -->
-  <section class="downloads" id="downloads">
-
-    <div class="section-title">
-      <p>OFFICIAL DOWNLOADS</p>
-      <h2>THE TRACKLIST</h2>
+  <!-- About -->
+  <section id="about" class="section about">
+    <div class="container">
+      <div class="section-header">
+        <h2>About the Artist</h2>
+        <div class="accent-line"></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p class="lead">My name is <strong>Pracci Pro</strong>. Real name <strong>Bupe</strong>.</p>
+          <p>I'm an artist from Kafue Town, Lusaka, Zambia. It's a small place, but the dreams are big. Hip-Hop/Rap is the language I speak, and WhiteBlood Music is the home.</p>
+          <p>My latest body of work <em>DONT BELONG HERE!!</em> tells the story of how my life has been for the last 4 years. Every track carries real feelings — the struggles, the wins, the nights that shaped me.</p>
+          <p>Born and raised in Zambia. Currently chasing the dream in Dehradun, India. The game was missing someone — I'm that guy.</p>
+          <div class="about-tags">
+            <span>Hip-Hop</span>
+            <span>Rap</span>
+            <span>Kafue</span>
+            <span>WhiteBlood Music</span>
+          </div>
+        </div>
+        <div class="about-card">
+          <h3>Latest Projects</h3>
+          <ul class="project-list">
+            <li>
+              <span class="project-title">DONT BELONG HERE!!</span>
+              <span class="project-type">Album</span>
+            </li>
+            <li>
+              <span class="project-title">Libra. the Balance</span>
+              <span class="project-type">EP • 2025</span>
+            </li>
+            <li>
+              <span class="project-title">BEES NEED HONEY</span>
+              <span class="project-type">EP • 2024</span>
+            </li>
+            <li>
+              <span class="project-title">THE DANCING TOOTH</span>
+              <span class="project-type">Single • 2024</span>
+            </li>
+            <li>
+              <span class="project-title">Shine</span>
+              <span class="project-type">Single • 2024</span>
+            </li>
+            <li>
+              <span class="project-title">SPECIAL ATTENTION</span>
+              <span class="project-type">Single • 2024</span>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
-
-
-    <!-- DOWNLOAD ALL -->
-    <div class="download-all-container">
-
-      <button id="downloadAll" class="download-all">
-        ↓ DOWNLOAD ALL TRACKS
-      </button>
-
-      <p>
-        Support the artist by downloading the official music.
-      </p>
-
-    </div>
-
-
-    <!-- TRACKS -->
-    <div class="track-list">
-
-
-      <!-- TRACK 1 -->
-      <div class="track">
-
-        <div class="track-number">01</div>
-
-        <div class="track-details">
-
-          <h3>Big Boys Dont Cry</h3>
-
-          <audio controls preload="none">
-            <source src="music/dont-belong-here/big-boys-dont-cry.mp3"
-                    type="audio/mpeg">
-          </audio>
-
-        </div>
-
-        <a class="download-button"
-           href="music/dont-belong-here/big-boys-dont-cry.mp3"
-           download>
-          ↓ DOWNLOAD
-        </a>
-
-      </div>
-
-
-      <!-- TRACK 2 -->
-      <div class="track">
-
-        <div class="track-number">02</div>
-
-        <div class="track-details">
-
-          <h3>Ninkula</h3>
-
-          <audio controls preload="none">
-            <source src="music/dont-belong-here/ninkula.mp3"
-                    type="audio/mpeg">
-          </audio>
-
-        </div>
-
-        <a class="download-button"
-           href="music/dont-belong-here/ninkula.mp3"
-           download>
-          ↓ DOWNLOAD
-        </a>
-
-      </div>
-
-
-      <!-- TRACK 3 -->
-      <div class="track">
-
-        <div class="track-number">03</div>
-
-        <div class="track-details">
-
-          <h3>Feels Like Forever</h3>
-
-          <audio controls preload="none">
-            <source src="music/dont-belong-here/feels-like-forever.mp3"
-                    type="audio/mpeg">
-          </audio>
-
-        </div>
-
-        <a class="download-button"
-           href="music/dont-belong-here/feels-like-forever.mp3"
-           download>
-          ↓ DOWNLOAD
-        </a>
-
-      </div>
-
-
-      <!-- TRACK 4 -->
-      <div class="track">
-
-        <div class="track-number">04</div>
-
-        <div class="track-details">
-
-          <h3>Drugs <span>ft. Buvixx Konse</span></h3>
-
-          <audio controls preload="none">
-            <source src="music/dont-belong-here/drugs.mp3"
-                    type="audio/mpeg">
-          </audio>
-
-        </div>
-
-        <a class="download-button"
-           href="music/dont-belong-here/drugs.mp3"
-           download>
-          ↓ DOWNLOAD
-        </a>
-
-      </div>
-
-
-      <!-- TRACK 5 -->
-      <div class="track">
-
-        <div class="track-number">05</div>
-
-        <div class="track-details">
-
-          <h3>4K Branding</h3>
-
-          <audio controls preload="none">
-            <source src="music/dont-belong-here/4k-branding.mp3"
-                    type="audio/mpeg">
-          </audio>
-
-        </div>
-
-        <a class="download-button"
-           href="music/dont-belong-here/4k-branding.mp3"
-           download>
-          ↓ DOWNLOAD
-        </a>
-
-      </div>
-
-
-      <!-- TRACK 6 -->
-      <div class="track">
-
-        <div class="track-number">06</div>
-
-        <div class="track-details">
-
-          <h3>Mr Babylon</h3>
-
-          <audio controls preload="none">
-            <source src="music/dont-belong-here/mr-babylon.mp3"
-                    type="audio/mpeg">
-          </audio>
-
-        </div>
-
-        <a class="download-button"
-           href="music/dont-belong-here/mr-babylon.mp3"
-           download>
-          ↓ DOWNLOAD
-        </a>
-
-      </div>
-
-
-      <!-- TRACK 7 -->
-      <div class="track">
-
-        <div class="track-number">07</div>
-
-        <div class="track-details">
-
-          <h3>Shubham Kumar</h3>
-
-          <audio controls preload="none">
-            <source src="music/dont-belong-here/shubham-kumar.mp3"
-                    type="audio/mpeg">
-          </audio>
-
-        </div>
-
-        <a class="download-button"
-           href="music/dont-belong-here/shubham-kumar.mp3"
-           download>
-          ↓ DOWNLOAD
-        </a>
-
-      </div>
-
-
-      <!-- TRACK 8 -->
-      <div class="track">
-
-        <div class="track-number">08</div>
-
-        <div class="track-details">
-
-          <h3>Unza Radio</h3>
-
-          <audio controls preload="none">
-            <source src="music/dont-belong-here/unza-radio.mp3"
-                    type="audio/mpeg">
-          </audio>
-
-        </div>
-
-        <a class="download-button"
-           href="music/dont-belong-here/unza-radio.mp3"
-           download>
-          ↓ DOWNLOAD
-        </a>
-
-      </div>
-
-
-      <!-- TRACK 9 -->
-      <div class="track">
-
-        <div class="track-number">09</div>
-
-        <div class="track-details">
-
-          <h3>Punch In</h3>
-
-          <audio controls preload="none">
-            <source src="music/dont-belong-here/punch-in.mp3"
-                    type="audio/mpeg">
-          </audio>
-
-        </div>
-
-        <a class="download-button"
-           href="music/dont-belong-here/punch-in.mp3"
-           download>
-          ↓ DOWNLOAD
-        </a>
-
-      </div>
-
-
-      <!-- TRACK 10 -->
-      <div class="track">
-
-        <div class="track-number">10</div>
-
-        <div class="track-details">
-
-          <h3>Kafue State of Mind <span>ft. Jeffrey Thebigguap</span></h3>
-
-          <audio controls preload="none">
-            <source src="music/dont-belong-here/kafue-state-of-mind.mp3"
-                    type="audio/mpeg">
-          </audio>
-
-        </div>
-
-        <a class="download-button"
-           href="music/dont-belong-here/kafue-state-of-mind.mp3"
-           download>
-          ↓ DOWNLOAD
-        </a>
-
-      </div>
-
-    </div>
-
   </section>
 
-
-  <!-- ABOUT -->
-  <section class="about" id="about">
-
-    <div class="about-content">
-
-      <p>THE STORY</p>
-
-      <h2>DON'T BELONG HERE!!</h2>
-
-      <p>
-        Don't Belong Here!! is a Pracci Pro project documenting
-        experiences, thoughts, struggles and perspectives through
-        hip-hop.
-      </p>
-
-      <p>
-        This page provides fans with direct access to the official
-        digital downloads.
-      </p>
-
-      <div class="brand">
-        <strong>WAULESI ASADYE</strong>
-        <span>THE LIFESTYLE</span>
+  <!-- Music -->
+  <section id="music" class="section music">
+    <div class="container">
+      <div class="section-header">
+        <h2>Stream the Music</h2>
+        <div class="accent-line"></div>
+        <p class="section-desc">Listen on your favorite platform</p>
       </div>
 
-    </div>
+      <div class="platform-links">
+        <a href="https://open.spotify.com/artist/0vaxC8HrI9FM1Jgbo7qM9h" target="_blank" rel="noopener" class="platform-btn spotify">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.092-.779-.198-.87-.614-.092-.422.198-.78.614-.87 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.198 1.065zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>
+          Spotify
+        </a>
+        <a href="https://audiomack.com/pracci-pro" target="_blank" rel="noopener" class="platform-btn audiomack">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/></svg>
+          Audiomack
+        </a>
+        <a href="https://music.apple.com/artist/pracci-pro/1599161783" target="_blank" rel="noopener" class="platform-btn apple">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+          Apple Music
+        </a>
+        <a href="https://www.youtube.com/@itswhitebloodmusic7576" target="_blank" rel="noopener" class="platform-btn youtube">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+          YouTube
+        </a>
+      </div>
 
+      <div class="spotify-embed">
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/0vaxC8HrI9FM1Jgbo7qM9h?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      </div>
+
+      <div class="track-highlights">
+        <h3>Popular Tracks</h3>
+        <div class="tracks-grid">
+          <div class="track-card">
+            <div class="track-num">01</div>
+            <div class="track-info">
+              <h4>DRUGS</h4>
+              <p>Popular</p>
+            </div>
+          </div>
+          <div class="track-card">
+            <div class="track-num">02</div>
+            <div class="track-info">
+              <h4>MR BABYLON</h4>
+              <p>Popular</p>
+            </div>
+          </div>
+          <div class="track-card">
+            <div class="track-num">03</div>
+            <div class="track-info">
+              <h4>NINKULA</h4>
+              <p>Popular</p>
+            </div>
+          </div>
+          <div class="track-card">
+            <div class="track-num">04</div>
+            <div class="track-info">
+              <h4>BIG BOYS DONT CRY</h4>
+              <p>Popular</p>
+            </div>
+          </div>
+          <div class="track-card">
+            <div class="track-num">05</div>
+            <div class="track-info">
+              <h4>FEELS LIKE FOREVER</h4>
+              <p>Popular</p>
+            </div>
+          </div>
+          <div class="track-card">
+            <div class="track-num">06</div>
+            <div class="track-info">
+              <h4>Shine</h4>
+              <p>Single • 2024</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
+  <!-- Videos -->
+  <section id="videos" class="section videos">
+    <div class="container">
+      <div class="section-header">
+        <h2>Music Videos</h2>
+        <div class="accent-line"></div>
+        <p class="section-desc">Official visuals from WhiteBlood Music</p>
+      </div>
 
-  <!-- FOOTER -->
-  <footer>
+      <div class="videos-grid">
+        <div class="video-card">
+          <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/Do_13aiZWkI" title="Pracci Pro - Dancing Tooth (Music Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+          </div>
+          <h3>Dancing Tooth</h3>
+          <p>Official Music Video</p>
+        </div>
+        <div class="video-card">
+          <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/beTctA9evDU" title="Pracci Pro - 4 Letters" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+          </div>
+          <h3>4 Letters</h3>
+          <p>Official Track</p>
+        </div>
+        <div class="video-card">
+          <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/I7mOxhj-KM4" title="Speed Dial - Pracci Pro | Official Music Video 2021" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+          </div>
+          <h3>Speed Dial</h3>
+          <p>Official Music Video 2021</p>
+        </div>
+        <div class="video-card">
+          <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/JonRxb0t-f8" title="Pracci Pro - Free Mind (Official Music Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+          </div>
+          <h3>Free Mind</h3>
+          <p>Official Music Video</p>
+        </div>
+        <div class="video-card">
+          <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/hM67Y3LZohk" title="Pracci Pro - Hold My Hand - (Official lyric video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+          </div>
+          <h3>Hold My Hand</h3>
+          <p>Official Lyric Video</p>
+        </div>
+        <div class="video-card">
+          <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/hLDPmAklZ1k" title="Pracci Pro - Hold My Hand" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+          </div>
+          <h3>Hold My Hand</h3>
+          <p>Official Track</p>
+        </div>
+      </div>
 
-    <div class="footer-logo">
-      PRACCI PRO
+      <div class="more-videos">
+        <a href="https://www.youtube.com/@itswhitebloodmusic7576" target="_blank" rel="noopener" class="btn btn-outline">View All on YouTube →</a>
+      </div>
     </div>
+  </section>
 
-    <p>
-      Music • Culture • Waulesi Asadye
-    </p>
+  <!-- Connect -->
+  <section id="connect" class="section connect">
+    <div class="container">
+      <div class="section-header">
+        <h2>Connect</h2>
+        <div class="accent-line"></div>
+        <p class="section-desc">Follow the journey. Stay in the loop.</p>
+      </div>
 
-    <div class="social-links">
-
-      <a href="#" target="_blank">Instagram</a>
-      <a href="#" target="_blank">Facebook</a>
-      <a href="#" target="_blank">TikTok</a>
-
+      <div class="social-grid">
+        <a href="https://www.instagram.com/praccipro232/" target="_blank" rel="noopener" class="social-card">
+          <div class="social-icon instagram">IG</div>
+          <h3>Instagram</h3>
+          <p>@praccipro232</p>
+        </a>
+        <a href="https://x.com/ProPracci" target="_blank" rel="noopener" class="social-card">
+          <div class="social-icon x">X</div>
+          <h3>X / Twitter</h3>
+          <p>@ProPracci</p>
+        </a>
+        <a href="https://www.youtube.com/@itswhitebloodmusic7576" target="_blank" rel="noopener" class="social-card">
+          <div class="social-icon youtube">YT</div>
+          <h3>YouTube</h3>
+          <p>it's WhiteBlood Music</p>
+        </a>
+        <a href="https://linktr.ee/PracciPro" target="_blank" rel="noopener" class="social-card">
+          <div class="social-icon linktree">LT</div>
+          <h3>Linktree</h3>
+          <p>All links in one place</p>
+        </a>
+        <a href="https://open.spotify.com/artist/0vaxC8HrI9FM1Jgbo7qM9h" target="_blank" rel="noopener" class="social-card">
+          <div class="social-icon spotify">SP</div>
+          <h3>Spotify</h3>
+          <p>Stream the catalog</p>
+        </a>
+        <a href="https://audiomack.com/pracci-pro" target="_blank" rel="noopener" class="social-card">
+          <div class="social-icon audiomack">AM</div>
+          <h3>Audiomack</h3>
+          <p>@pracci-pro</p>
+        </a>
+      </div>
     </div>
+  </section>
 
-    <p class="copyright">
-      © 2026 Pracci Pro. All rights reserved.
-    </p>
-
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <a href="#home" class="logo">PRACCI <span>PRO</span></a>
+          <p>Zambian Hip Hop • WhiteBlood Music</p>
+        </div>
+        <div class="footer-links">
+          <a href="#about">About</a>
+          <a href="#music">Music</a>
+          <a href="#videos">Videos</a>
+          <a href="#connect">Connect</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span id="year"></span> Pracci Pro. All rights reserved.</p>
+        <p class="footer-note">From Kafue with love 🇿🇲</p>
+      </div>
+    </div>
   </footer>
 
-
   <script src="script.js"></script>
-
 </body>
 </html>
