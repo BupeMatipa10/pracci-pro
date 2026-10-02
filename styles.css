@@ -432,27 +432,71 @@ ul {
   color: var(--text-muted);
 }
 
-/* WAULESI ASADYE FASHION */
 
+/* WAULESI ASADYE FASHION */
 .fashion-section {
+  padding: 70px 20px;
   text-align: center;
-  padding: 60px 20px;
 }
 
 .fashion-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  max-width: 1200px;
-  margin: 30px auto;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 25px;
+  max-width: 1100px;
+  margin: 40px auto;
+}
+
+.fashion-card {
+  overflow: hidden;
+  border-radius: 12px;
+  background: #151515;
 }
 
 .fashion-card img {
+  display: block;
   width: 100%;
-  height: 400px;
+  height: 350px;
   object-fit: cover;
   border-radius: 12px;
-  display: block;
+  transition: transform 0.4s ease;
+}
+
+.fashion-card img:hover {
+  transform: scale(1.05);
+}
+
+.fashion-card h3 {
+  padding: 15px 10px;
+  color: white;
+  font-size: 18px;
+}
+
+.fashion-bottom {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.fashion-bottom h3 {
+  font-size: 22px;
+}
+
+/* Mobile and tablet */
+@media (max-width: 768px) {
+  .fashion-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 500px) {
+  .fashion-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .fashion-card img {
+    height: auto;
+    max-height: 450px;
+  }
 }
 
 /* Mobile */
