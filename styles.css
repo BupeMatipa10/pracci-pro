@@ -557,7 +557,29 @@ ul {
     font-size: 12px;
     font-weight: bold;
 }
+/* Fashion section integration */
+.fashion-section {
+    background: var(--bg);
+    padding: 5rem 0;
+    scroll-margin-top: 64px;
+}
 
+.fashion-section .fashion-header {
+    margin-bottom: 3rem;
+}
+
+.fashion-section .fashion-header h2 {
+    font-family: var(--font-display);
+}
+
+.fashion-section .fashion-label {
+    display: block;
+    margin-bottom: 12px;
+}
+
+.fashion-section .fashion-card img {
+    object-position: center;
+}
 /* RESPONSIVE DESIGN */
 
 @media (max-width: 850px) {
