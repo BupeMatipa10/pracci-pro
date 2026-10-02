@@ -435,155 +435,32 @@ ul {
 /* WAULESI ASADYE FASHION */
 
 .fashion-section {
-    background: #090909;
-    color: #fff;
-    padding: 85px 6%;
-    text-align: center;
+  text-align: center;
+  padding: 60px 20px;
 }
 
-.fashion-header {
-    max-width: 750px;
-    margin: 0 auto 50px;
-}
-
-.fashion-label {
-    color: #d5ad36;
-    font-size: 12px;
-    letter-spacing: 4px;
-    font-weight: bold;
-}
-
-.fashion-header h2 {
-    font-size: clamp(35px, 6vw, 65px);
-    font-weight: 900;
-    letter-spacing: 3px;
-    margin: 15px 0;
-}
-
-.fashion-header h2 span {
-    color: #d5ad36;
-}
-
-.fashion-header p {
-    color: #bdbdbd;
-    font-size: 16px;
-    line-height: 1.8;
-}
-
-/* GALLERY */
-
-.fashion-gallery {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 25px;
-    max-width: 1200px;
-    margin: auto;
-}
-
-.fashion-card {
-    background: #151515;
-    border: 1px solid #292929;
-    border-radius: 10px;
-    overflow: hidden;
-    text-align: left;
-    transition: transform 0.3s, border-color 0.3s;
-}
-
-.fashion-card:hover {
-    transform: translateY(-8px);
-    border-color: #d5ad36;
+.fashion-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1200px;
+  margin: 30px auto;
 }
 
 .fashion-card img {
-    width: 100%;
-    height: 390px;
-    object-fit: cover;
-    display: block;
-    transition: transform 0.5s;
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
 }
 
-.fashion-card:hover img {
-    transform: scale(1.04);
+/* Mobile */
+@media (max-width: 768px) {
+  .fashion-grid {
+    grid-template-columns: 1fr;
+  }
 }
-
-.fashion-info {
-    padding: 22px;
-}
-
-.fashion-info h3 {
-    font-size: 20px;
-    margin: 0 0 10px;
-    color: #fff;
-}
-
-.fashion-info p {
-    color: #aaa;
-    font-size: 14px;
-    margin-bottom: 20px;
-}
-
-.fashion-order {
-    display: inline-block;
-    padding: 12px 22px;
-    background: #d5ad36;
-    color: #090909;
-    font-size: 12px;
-    font-weight: 800;
-    letter-spacing: 1px;
-    text-decoration: none;
-    border-radius: 4px;
-    transition: 0.3s;
-}
-
-.fashion-order:hover {
-    background: #fff;
-    transform: translateY(-2px);
-}
-
-.fashion-footer {
-    margin: 65px auto 0;
-    border-top: 1px solid #333;
-    padding-top: 35px;
-}
-
-.fashion-footer h3 {
-    font-size: clamp(18px, 3vw, 27px);
-    letter-spacing: 2px;
-}
-
-.fashion-footer p {
-    color: #d5ad36;
-    letter-spacing: 3px;
-    font-size: 12px;
-    font-weight: bold;
-}
-/* Fashion section integration */
-.fashion-section {
-    background: var(--bg);
-    padding: 5rem 0;
-    scroll-margin-top: 64px;
-}
-
-.fashion-section .fashion-header {
-    margin-bottom: 3rem;
-}
-
-.fashion-section .fashion-header h2 {
-    font-family: var(--font-display);
-}
-
-.fashion-section .fashion-label {
-    display: block;
-    margin-bottom: 12px;
-}
-
-.fashion-section .fashion-card img {
-    object-position: center;
-  .fashion-section .section-header {
-    text-align: center;
-    width: 100%;
-    margin: 0 auto 30px;
-
 }
 /* RESPONSIVE DESIGN */
 
