@@ -772,122 +772,31 @@ ul {
   background: #128C7E;
   transform: scale(1.05);
 }
-/* ==============================
-   BEHIND THE SCENES
-   VIDEO GRID
-   ============================== */
-
-.behind-scenes {
-  padding: 80px 20px;
-}
-
-
-/* ==============================
-   VIDEO GRID
-   ============================== */
-
 .bts-video-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 30px;
-  width: 100%;
+  gap: 25px;
   max-width: 1100px;
-  margin: 45px auto 0;
+  margin: 40px auto;
 }
-
-
-/* ==============================
-   VIDEO CARD
-   ============================== */
-
-.bts-video-card {
-  width: 100%;
-  overflow: hidden;
-}
-
-
-/* ==============================
-   VIDEO
-   ============================== */
 
 .bts-video-card video {
+  display: block;
   width: 100%;
   height: 350px;
-  display: block;
   object-fit: cover;
-  border-radius: 12px;
   background: #111;
+  border-radius: 12px;
 }
-
-
-/* ==============================
-   VIDEO INFORMATION
-   ============================== */
-
-.bts-video-info {
-  padding: 15px 5px 5px;
-}
-
-.bts-video-info h3 {
-  font-family: 'Oswald', sans-serif;
-  font-size: 22px;
-  margin: 0 0 6px;
-  letter-spacing: 0.5px;
-}
-
-.bts-video-info p {
-  font-family: 'Inter', sans-serif;
-  font-size: 14px;
-  margin: 0;
-  opacity: 0.8;
-}
-
-
-/* ==============================
-   HOVER EFFECT
-   ============================== */
-
-.bts-video-card video {
-  transition: transform 0.4s ease;
-}
-
-.bts-video-card:hover video {
-  transform: scale(1.02);
-}
-
-
-/* ==============================
-   TABLET
-   ============================== */
 
 @media (max-width: 900px) {
-
   .bts-video-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 25px;
+    grid-template-columns: repeat(2, 1fr);
   }
-
-  .bts-video-card video {
-    height: 320px;
-  }
-
 }
 
-
-/* ==============================
-   MOBILE
-   ============================== */
-
 @media (max-width: 600px) {
-
   .bts-video-grid {
     grid-template-columns: 1fr;
-    gap: 30px;
   }
-
-  .bts-video-card video {
-    height: auto;
-    aspect-ratio: 16 / 9;
-  }
-
 }
