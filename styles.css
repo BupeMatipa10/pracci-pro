@@ -773,16 +773,10 @@ ul {
   transform: scale(1.05);
 }
 /* ==============================
-   BEHIND THE SCENES
+   BTS VIDEO GRID
    ============================== */
 
-.behind-scenes {
-  padding: 80px 20px;
-}
-
-/* BTS 3-COLUMN GRID */
-
-.bts-grid {
+.bts-video-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 25px;
@@ -790,59 +784,36 @@ ul {
   margin: 40px auto;
 }
 
-.bts-card {
-  position: relative;
+.bts-video-card {
   overflow: hidden;
+}
+
+.bts-video-card video {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  display: block;
   border-radius: 12px;
-  aspect-ratio: 4 / 5;
   background: #111;
 }
 
-.bts-card img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  transition: transform 0.5s ease;
-}
-
-.bts-card:hover img {
-  transform: scale(1.08);
-}
-
-/* TEXT ON IMAGE */
-
-.bts-overlay {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  padding: 35px 20px 20px;
-  background: linear-gradient(
-    transparent,
-    rgba(0, 0, 0, 0.9)
-  );
-  color: #fff;
-}
-
-.bts-overlay h3 {
+.bts-video-card h3 {
   font-family: 'Oswald', sans-serif;
-  font-size: 24px;
-  margin: 0 0 6px;
+  font-size: 22px;
+  margin: 15px 0 5px;
   text-transform: uppercase;
 }
 
-.bts-overlay p {
+.bts-video-card p {
   font-family: 'Inter', sans-serif;
   font-size: 14px;
   margin: 0;
-  opacity: 0.9;
 }
 
 /* TABLET */
 
 @media (max-width: 900px) {
-  .bts-grid {
+  .bts-video-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -850,12 +821,11 @@ ul {
 /* MOBILE */
 
 @media (max-width: 600px) {
-  .bts-grid {
+  .bts-video-grid {
     grid-template-columns: 1fr;
-    gap: 20px;
   }
 
-  .bts-card {
-    aspect-ratio: 4 / 5;
+  .bts-video-card video {
+    height: auto;
   }
 }
