@@ -772,3 +772,79 @@ ul {
   background: #128C7E;
   transform: scale(1.05);
 }
+/* ==============================
+   BEHIND THE SCENES
+   ============================== */
+
+.behind-scenes {
+  padding: 80px 20px;
+}
+
+.bts-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  max-width: 1100px;
+  margin: 40px auto 0;
+}
+
+.bts-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  aspect-ratio: 4 / 5;
+  background: #111;
+}
+
+.bts-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.bts-card:hover img {
+  transform: scale(1.08);
+}
+
+.bts-overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 30px 20px 20px;
+  background: linear-gradient(
+    transparent,
+    rgba(0, 0, 0, 0.9)
+  );
+  color: #fff;
+}
+
+.bts-overlay h3 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 24px;
+  margin: 0 0 6px;
+  text-transform: uppercase;
+}
+
+.bts-overlay p {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  margin: 0;
+  opacity: 0.9;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+  .bts-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .bts-card {
+    aspect-ratio: 4 / 5;
+  }
+
+}
