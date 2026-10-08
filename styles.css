@@ -740,66 +740,7 @@ ul {
     align-items: stretch;
   }
 
-  .platform-btn {
-    justify-content: center;
-  }
-}
-
-/* Fashion item purchase buttons */
-.fashion-card {
-  text-align: center;
-}
-
-.fashion-card h3 {
-  margin: 15px 0;
-  font-size: 20px;
-}
-
-.fashion-card .buy-button {
-  display: inline-block;
-  background: #25D366;
-  color: #fff;
-  padding: 12px 22px;
-  border-radius: 25px;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 14px;
-  transition: 0.3s ease;
-}
-
-.fashion-card .buy-button:hover {
-  background: #128C7E;
-  transform: scale(1.05);
-}
-.bts-video-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 25px;
-  max-width: 1100px;
-  margin: 40px auto;
-}
-
-.bts-video-card video {
-  display: block;
-  width: 100%;
-  height: 350px;
-  object-fit: cover;
-  background: #111;
-  border-radius: 12px;
-}
-
-@media (max-width: 900px) {
-  .bts-video-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 600px) {
-  .bts-video-grid {
-    grid-template-columns: 1fr;
-  }
-}
-/* ===== BEHIND THE SCENES ===== */
+ /* ===== BEHIND THE SCENES ===== */
 
 .bts-video-grid {
   display: grid;
@@ -816,6 +757,12 @@ ul {
   border: 1px solid var(--border);
   border-radius: var(--radius);
   overflow: hidden;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.bts-video-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--accent);
 }
 
 .bts-video-card video {
