@@ -809,3 +809,62 @@ ul {
     height: 210px;
   }
 }
+```css
+/* BEHIND THE SCENES GRID */
+.behind-scenes-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 25px;
+  margin-top: 35px;
+}
+
+.behind-card {
+  min-width: 0;
+  overflow: hidden;
+  background: #111;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.behind-card:hover {
+  transform: translateY(-5px);
+}
+
+.behind-card video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  background: #000;
+}
+
+.behind-card-content {
+  padding: 18px;
+}
+
+.behind-card-content h3 {
+  margin: 0 0 8px;
+}
+
+.behind-card-content p {
+  margin: 0;
+  line-height: 1.6;
+  opacity: 0.75;
+}
+
+/* Tablets */
+@media (max-width: 900px) {
+  .behind-scenes-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 600px) {
+  .behind-scenes-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+```
