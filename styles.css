@@ -739,4 +739,23 @@ ul {
     flex-direction: column;
     align-items: stretch;
   }
+```css
+/* LIVE PERFORMANCE VIDEO */
+
+.performance-video {
+  max-width: 850px;
+  width: 100%;
+  margin: 40px auto 0;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 12px;
+  background: #000;
+}
+
+.performance-video iframe {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border: 0;
+}
 
