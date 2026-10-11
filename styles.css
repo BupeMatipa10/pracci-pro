@@ -759,3 +759,43 @@ ul {
   border: 0;
 }
 
+/* BOOK PRACCI PRO */
+
+.booking-section {
+  padding: 80px 20px;
+}
+
+.booking-content {
+  max-width: 750px;
+  margin: 35px auto 0;
+  padding: 40px 25px;
+  text-align: center;
+  background: #111;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 16px;
+}
+
+.booking-content h3 {
+  margin: 0 0 15px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 28px;
+  text-transform: uppercase;
+}
+
+.booking-content p {
+  color: #bbb;
+  line-height: 1.8;
+  margin-bottom: 25px;
+}
+
+.booking-content .btn {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.booking-content .booking-note {
+  margin: 20px 0 0;
+  font-size: 13px;
+  color: #888;
+}
+
