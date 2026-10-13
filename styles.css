@@ -799,3 +799,152 @@ ul {
   color: #888;
 }
 
+/* PRACCI PRO - SUPPORT THE JOURNEY */
+.support-section {
+  background: #080808;
+  color: #fff;
+  padding: 85px 20px;
+  text-align: center;
+  border-top: 1px solid #252525;
+}
+
+.support-content {
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+.support-label {
+  color: #e60000;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 4px;
+}
+
+.support-section h2 {
+  color: #fff;
+  font-size: clamp(32px, 5vw, 56px);
+  margin: 18px 0;
+  font-weight: 800;
+}
+
+.support-section .accent-line {
+  width: 70px;
+  height: 4px;
+  background: #e60000;
+  margin: 0 auto 28px;
+}
+
+.support-message {
+  max-width: 700px;
+  margin: 0 auto 35px;
+  color: #ccc;
+  line-height: 1.9;
+  font-size: 16px;
+}
+
+.donation-cards {
+  display: grid;
+  grid-template-columns: minmax(0, 480px);
+  justify-content: center;
+  margin: 35px auto;
+}
+
+.donation-card {
+  background: #121212;
+  border: 1px solid #333;
+  border-radius: 10px;
+  padding: 32px 25px;
+}
+
+.airtel-donation {
+  border-top: 4px solid #e60000;
+}
+
+.airtel-icon {
+  width: 55px;
+  height: 55px;
+  margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e60000;
+  color: #fff;
+  font-size: 32px;
+  font-weight: 900;
+  border-radius: 50%;
+}
+
+.donation-card h3 {
+  font-size: 21px;
+  margin-bottom: 18px;
+  color: #fff;
+}
+
+.donation-card > p {
+  color: #ccc;
+  line-height: 1.8;
+}
+
+.payment-details {
+  background: #1c1c1c;
+  border-radius: 6px;
+  padding: 15px;
+  margin: 22px 0;
+  text-align: left;
+}
+
+.payment-details p {
+  margin: 9px 0;
+  color: #eee;
+  overflow-wrap: anywhere;
+}
+
+.payment-instructions {
+  font-size: 13px;
+}
+
+.donation-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 15px 22px;
+  background: #e60000;
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  border-radius: 4px;
+  transition: background 0.2s ease;
+}
+
+.donation-button:hover {
+  background: #bd0000;
+}
+
+.support-thanks {
+  color: #fff;
+  margin: 30px auto 15px;
+  line-height: 1.8;
+}
+
+.support-note {
+  color: #999;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+@media (max-width: 600px) {
+  .support-section {
+    padding: 60px 16px;
+  }
+
+  .donation-card {
+    padding: 25px 18px;
+  }
+
+  .donation-button {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
